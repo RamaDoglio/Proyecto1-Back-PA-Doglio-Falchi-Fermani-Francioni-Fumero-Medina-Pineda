@@ -336,6 +336,11 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@codegenie/serverless-express@^4.12.5":
+  version "4.17.1"
+  resolved "https://registry.yarnpkg.com/@codegenie/serverless-express/-/serverless-express-4.17.1.tgz#70c30713d4ec37bda1366d55a551a55c62d5ee6d"
+  integrity sha512-B/4RRtVK2iAp5ho+qoUFxUeMaWCgSP+hNrdLJV3DWKZ1E9n9oLKdsJ6W9LQekZsD8rGD15hDadIKWKKw5i3f3A==
+
 "@colors/colors@1.5.0":
   version "1.5.0"
   resolved "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz"
@@ -1880,6 +1885,13 @@
   dependencies:
     "@typescript-eslint/types" "8.24.0"
     eslint-visitor-keys "^4.2.0"
+
+"@vendia/serverless-express@^4.12.6":
+  version "4.12.6"
+  resolved "https://registry.yarnpkg.com/@vendia/serverless-express/-/serverless-express-4.12.6.tgz#332a3c3e2c07069dbb8d3e95d69b23de2fe6dec2"
+  integrity sha512-ePsIPk3VQwgm5nh/JGBtTKQs5ZOF7REjHxC+PKk/CHvhlKQkJuUU365uPOlxuLJhC+BAefDznDRReWxpnKjmYg==
+  dependencies:
+    "@codegenie/serverless-express" "^4.12.5"
 
 "@webassemblyjs/ast@1.14.1", "@webassemblyjs/ast@^1.14.1":
   version "1.14.1"
