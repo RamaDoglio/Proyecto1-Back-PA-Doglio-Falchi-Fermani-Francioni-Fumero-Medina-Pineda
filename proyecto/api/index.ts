@@ -1,3 +1,6 @@
+// ESTO DEBE IR OBLIGATORIAMENTE EN LA PRIMERA LÍNEA
+import 'tsconfig-paths/register';
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../src/app.module';
 import { GlobalExceptionFilter } from '../src/modules/common/filters/global-exception.filters';
@@ -48,7 +51,6 @@ async function bootstrap() {
   return cachedServer;
 }
 
-// Esto es lo que Vercel ejecutará en cada petición HTTP
 export default async function handler(req: any, res: any) {
   const server = await bootstrap();
   return server(req, res);
