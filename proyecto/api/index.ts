@@ -4,7 +4,7 @@ import { GlobalExceptionFilter } from '../src/modules/common/filters/global-exce
 import { ValidationPipe } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ExpressAdapter } from '@nestjs/platform-express';
-import * as express from 'express';
+import express from 'express';
 import { configure as serverlessExpress } from '@vendia/serverless-express';
 
 let cachedServer: any;
