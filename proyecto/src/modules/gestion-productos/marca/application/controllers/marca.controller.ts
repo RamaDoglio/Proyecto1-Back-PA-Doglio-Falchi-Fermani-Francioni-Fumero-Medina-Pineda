@@ -14,14 +14,15 @@ import {
 } from '@nestjs/common';
 import { CreateMarcaDto } from '../../dto/create-marca.dto';
 import { UpdateMarcaDto } from '../../dto/update-marca.dto';
-import { NormalizeDenominacionPipe } from 'src/modules/common/pipes/normalize-denominations.pipe';
-import { PaginationWithDenominacionDto } from 'src/modules/common/dto/busquedas/pagination-with-denominacion.dto';
-import { Roles } from 'src/modules/gestion-usuario/auth/roles.decorator';
-import { AuthGuard } from 'src/modules/gestion-usuario/auth/auth.guard';
+// Rutas corregidas con rutas relativas (../):
+import { NormalizeDenominacionPipe } from '../../../../common/pipes/normalize-denominations.pipe';
+import { PaginationWithDenominacionDto } from '../../../../common/dto/busquedas/pagination-with-denominacion.dto';
+import { Roles } from '../../../../gestion-usuario/auth/roles.decorator';
+import { AuthGuard } from '../../../../gestion-usuario/auth/auth.guard';
 import { ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { MarcaDto } from '../../dto/marca.dto';
-import { NormalizeDenominacionSearchPipe } from 'src/modules/common/pipes/normalize-denominations-search.pipe';
-import { AuditoriaDto } from 'src/modules/gestion-sistema/auditoria/dto/auditoria.dto';
+import { NormalizeDenominacionSearchPipe } from '../../../../common/pipes/normalize-denominations-search.pipe';
+import { AuditoriaDto } from '../../../../gestion-sistema/auditoria/dto/auditoria.dto';
 import { MarcaService } from '../services/marca.service';
 
 @ApiTags('Gestion Productos')
