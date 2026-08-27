@@ -20,4 +20,8 @@ export default new DataSource({
 
   synchronize: false,
   logging: true,
+  ssl:
+    process.env.DB_SSL === 'true'
+      ? { rejectUnauthorized: false }
+      : undefined,
 });
