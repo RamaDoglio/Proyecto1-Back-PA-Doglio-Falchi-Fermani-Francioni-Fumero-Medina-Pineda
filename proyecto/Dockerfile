@@ -55,5 +55,5 @@ COPY --chown=node:node --from=build /usr/src/app/dist ./dist
 
 EXPOSE 3000
 
-# Start the server using the production build
-CMD [ "node", "dist/src/main.js" ]
+# Run migrations, then start the server using the production build
+CMD ["sh", "-c", "node node_modules/typeorm/cli.js migration:run -d dist/orm.config.js && node dist/src/main.js"]
