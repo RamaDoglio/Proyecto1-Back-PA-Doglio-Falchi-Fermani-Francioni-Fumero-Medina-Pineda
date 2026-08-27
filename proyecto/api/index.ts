@@ -1,14 +1,5 @@
-// Configurar las rutas absolutas apuntando directamente a la raíz y a src
-import * as tsConfigPaths from 'tsconfig-paths';
-import * as path from 'path';
-
-const basePath = path.join(__dirname, '..');
-tsConfigPaths.register({
-  baseUrl: basePath,
-  paths: {
-    "src/*": ["src/*"]
-  }
-});
+// ⚠️ ESTO DEBE SER LO PRIMERO - Antes de cualquier otro import
+import 'tsconfig-paths/register';
 
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from '../src/app.module';
